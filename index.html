@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form FCC</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto"
+  rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="card">
+
+  <div class="background-header"></div>
+  <div>
+    <header>
+      <h1 id="title">Preferences in the movies</h1>
+      <p id="description">Fill out the fields below so we can better match the recommendations for you</p>
+    </header>
+
+    <form id="survey-form" action="/" method="post">
+      <div>
+        <label for="name" id="name-label"><span class="red">*</span>Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div>
+        <label for="email" id="email-label"><span class="red">*</span>Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div>
+        <label for="number" id="number-label"><span class="red">*</span>Age</label>
+        <input id="number" name="number" type="number" placeholder="Enter your age" min="10" max="100" required>
+      </div>
+
+      <div>
+        <label for="dropdown" id="dropdown-label">What is your favorite movie genre?</label>
+        <select name="genre" id="dropdown">
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="animation">Animation</option>
+          <option value="biopic">Biopic</option>
+          <option value="childrens">Childrens</option>
+          <option value="comedy">Comedy</option>
+          <option value="crime">Crime</option>
+          <option value="documentary">Documentary</option>
+          <option value="drama">Drama</option>
+          <option value="horror">Horror</option>
+          <option value="family">Family</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="historical">Historical</option>
+          <option value="musical">Musical</option>
+          <option value="paranormal">Paranormal</option>
+          <option value="romance">Romance</option>
+          <option value="sport">Sport</option>
+          <option value="science-fiction">Science fiction</option>
+          <option value="thriller">Thriller</option>
+          <option value="war">War</option>
+          <option value="western">Western</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="define-genre">If you choose "Other", please write your favorite genre</label>
+        <input id="define-genre" name="define-genre" type="text" placeholder="Your favorite genre">
+      </div>
+
+      <div>
+        <label>How many times do you watch movies per week?</label>
+        <div class="radio">
+          <label class="container">Less than one
+            <input name="frequency" type="radio" value="0">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">One
+            <input name="frequency" type="radio" value="1">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">Two
+            <input name="frequency" type="radio" value="2">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">Three
+            <input name="frequency" type="radio" value="3">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">Four
+            <input name="frequency" type="radio" value="4">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">Five
+            <input name="frequency" type="radio" value="5">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">Six
+            <input name="frequency" type="radio" value="6">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">Seven
+            <input name="frequency" type="radio" value="7">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label>Which movies do you like?</label>
+        <div class="checkbox">
+          <label class="container">Before 1960s
+            <input type="checkbox" name="years" value="1900">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">1960s
+            <input type="checkbox" name="years" value="1960">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">1970s
+            <input type="checkbox" name="years" value="1970">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">1980s
+            <input type="checkbox" name="years" value="1980">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">1990s
+            <input type="checkbox" name="years" value="1990">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">2000s
+            <input type="checkbox" name="years" value="2000">
+            <span class="checkmark"></span>
+          </label>
+          <hr/>
+          <label class="container">2010s
+            <input type="checkbox" name="years" value="2010">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label for="comment">Write the names of the few movies that you liked the most</label>
+        <textarea name="comment" placeholder="Enter few favorite movies"></textarea>
+      </div>
+
+      <div><input type="submit" class="button" id="submit" value="Submit"></div>
+
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>Coded by <a href="https://www.freecodecamp.com/alexhuginn" target="_blank">Alex Huginn</a></p>
+  <p>Background created by <a href="https://www.freepik.com/free-photos-vectors/background">ydlabs - www.freepik.com</a></p>
+</footer>
+</body>
+</html>
